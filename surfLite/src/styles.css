@@ -1,0 +1,280 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+    --black : #110B11;
+    --skin : #fff8e8;
+    --yellow : #b7990d;
+    --red : #d52941;
+    --gray : #778472;
+}
+
+body {
+  position: relative;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background: url(/petpics/25097.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: Roboto, Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* animation: zoom-in-zoom-out 10s infinite; */
+  }
+  
+  .login-welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  
+  .main-block {
+    position: absolute;
+    top: 15%;
+    margin-top: 5.5%;
+    width: 350px;
+    z-index: 1;
+    display: flex;
+    border: 2px solid rgb(121, 121, 121);
+    box-shadow: 0px 10px 5px rgba(0,0,0,0.5);
+    background-color: var(--gray);
+    border-radius: 8px;
+  }
+  .login-image-block {
+    background-color: aliceblue;
+    z-index: 1;
+  }
+  
+  /* .login-image-background {
+    width: 250px;
+    height: 250px;
+    padding: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: zoom-in-zoom-out 4s ease infinite;
+  }
+  
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.05, 1.05);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  } */
+  
+  /* .a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border: 1px solid brown;
+  } */
+  .login-block {
+    position: relative;
+    width: 400px;
+    background-color: var(--skin);
+    box-sizing: border-box;
+    padding-top: 10px;
+    border-radius: 8px;
+  }
+  
+  .avatar {
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -60px;
+    left: 35%;
+  }
+  
+  .logo {
+    height: 24px;
+    width: 24px;
+  
+  }
+  
+  h1 {
+    margin: 0;
+    padding-left: 16px;
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 40px;
+  
+  }
+  
+  .login-block p {
+    margin: 0;
+    padding-left: 10px;
+    font-weight: bold;
+  }
+  
+  .login-block input {
+    width: 80%;
+    padding-left: 10px;
+    margin-bottom: 20px;
+  
+  }
+  .button-nav{
+    color: blue;
+    cursor: pointer;
+  }
+  .login-block input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    border: none;
+    width: 96%;
+    padding-left: 10px;
+    border-bottom: 1px solid var(--gray);
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000000;
+    font-size: 16px;
+  
+  }
+  
+  .login-block input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: var(--red);
+    color: #fff;
+    font-size: 18px;
+    margin-left: calc(10%);
+    border-radius: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .login-block input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: var(--skin);
+    border: solid 1px gray;
+    color: #000;
+  }
+  
+  .login-block a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--gray);
+    padding-bottom: 20px;
+  
+  }
+  
+  .login-block a:hover {
+    color: var(--black);
+  }
+  
+  .button-box {
+    width: 200px;
+    margin: 20px auto;
+    display: flex;
+    position: relative;
+    box-shadow: 0 0 20px 0.015px rgb(138, 138, 138);
+    border-radius: 30px;
+  }
+  #btn-center{
+   margin-left: 35%;
+  }
+  .toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    font-weight: bold;
+    font-size: 14px;
+    border: 0;
+    outline: none;
+    position: relative;
+  
+  }
+  #btn1{
+    transition: 1s;
+  }
+  #btn1:active{
+    transition: 1s;
+  }
+  #btn2{
+    transition: 1s;
+  }
+  
+  #btn2:active{
+    transition: 1s;
+  }
+  
+  #btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background: var(--yellow);
+    border-radius: 30px;
+    transition: .5s;
+  }
+  
+  .social-media {
+    margin: 30px auto;
+    text-align: center;
+  }
+  
+  .social-media img {
+    width: 28px;
+    margin: 0 12px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .checkbox {
+    display: flex;
+    white-space: nowrap;
+    width: 200px;
+    padding-left: 60px;
+    justify-content: space-around;
+  }
+  #register .checkbox{
+    margin-top: 20px;
+  }
+  #register .checkbox p {
+    margin-right: 30px;
+  }
+
+  .password-div{
+    position: relative;
+  }
+  .show-hide {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  
+  } 
+  .show-hide-button{
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding-right:17.5px;
+    height: 24px;
+    width: 24px;
+  }  
+  .show-hide-pic{
+    display: flex;
+    margin-right:10px;
+    align-items: center;
+    height: 16px;
+    width: 16px;
+  }
+  .pass-image{
+    display: none;
+  }
+  

@@ -1,0 +1,13 @@
+#btn2{
+    background-color:  #b7990d;
+    border-radius: 30px;
+}
+#btn1{
+    background: #fff8e8;
+    border-radius: 30px;
+}
+.text-danger{
+    margin-top: -50px;
+    font-size: 14px;
+    color: red;
+}

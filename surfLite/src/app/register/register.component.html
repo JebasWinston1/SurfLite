@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main-block" >
+  
+    <div class="a login-block">
+      <div class="button-box">
+        <div id="btn"></div>
+        <div id="btn"></div>
+        <button type="button" id="btn1" class="toggle-btn" routerLink="/login">Login</button>
+        <button type="button" id="btn2" class="toggle-btn" routerLink="/register">Register</button>
+      </div>
+      <form id="register" #f = "ngForm" novalidate (ngSubmit)="f.form.valid&&onSubmit()">
+        <p>Username *</p>
+        <input type="text" name="Nuser" placeholder="New username" autocomplete="off" required [(ngModel)]="formdata.name" #name = "ngModel">
+        <span class="text-danger" *ngIf="this.submit&&name.errors?.['required']">Username is required</span>
+        <p>Email *</p>
+        <input type="email" name="Nmail" id="" placeholder="Enter email ID" autocomplete="off" required [(ngModel)]="formdata.email" #email = 'ngModel'>
+        <span class="text-danger" *ngIf="this.submit&&email.errors?.['required']">Email is required</span>
+        <p>Password *</p>
+        <input type="text" name="Npass" placeholder="Enter Password" autocomplete="off" required [(ngModel)]="formdata.pass" #pass = 'ngModel' minlength="8">
+        <span class="text-danger" *ngIf="this.submit&&pass.errors?.['required']">Password is required</span>
+        <span class="text-danger" *ngIf="this.submit&&pass.errors?.['minlength']">Minimum characters is 8</span>
+        <!-- <input type="text" name="Npass2" placeholder="Enter again *" autocomplete="off" required [(ngModel)]="formdata.pass2" #pass2 = "ngModel" minlength="8">
+        <span class="text-danger" *ngIf="this.submit&&pass2.errors?.['required']">Rewrite Password</span>
+        <span class="text-danger" *ngIf="this.submit&&pass2.errors?.['minlength']">Minimum characters is 8</span> -->
+        <input id="register-button" type="submit" name="" value="Register" (click)="submit=true">
+        <span class="text-danger" *ngIf="this.errorMessage"><p [innerText]="this.errorMessage" ></p></span>
+        <p>Already have an account?<span class="button-nav" routerLink="/login">Login</span></p>
+      </form>
+    </div>
+
+  </div>
+</body>
+</html>

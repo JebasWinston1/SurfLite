@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main-block" >
+  
+    <div class="a login-block">
+      <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" id="btn1" class="toggle-btn" routerLink="/login">Login</button>
+        <button type="button" id="btn2" class="toggle-btn" routerLink="/register">Register</button>
+      </div>
+      <!-- <div class="social-media">
+        <img src="/social-media-icons/facebook.svg" alt="">
+        <img src="/social-media-icons/twitter.svg" alt="">
+        <img src="/social-media-icons/instagram.svg" alt="">
+        <img src="/social-media-icons/pinterest.svg" alt="">
+      </div> -->
+      <form id="login">
+        <p>Email</p>
+        <input type="email" name="Nmail" id="" placeholder="Enter email ID" autocomplete="off">
+        <div class="password-div">
+        <p>Password</p>
+        <input id="pass"  type="password" name="Pass" placeholder="Enter Password" autocomplete="off">
+        <div class="show-hide">
+          <button class="show-hide-button" onclick="showHide(event)">
+            <div class="pass-image1"><img src="/icons/closed-eye-svgrepo-com.svg" alt="" class="show-hide-pic"></div>
+          <div class="pass-image2"><img src="/icons/eye-svgrepo-com.svg" alt="" class="show-hide-pic"></div>
+        </button>
+      </div>
+      </div>
+        <div class="checkbox">
+          <input class="checkbox" type="checkbox"> 
+          <p>Remember Password</p>
+        </div>
+       <input id="login-button" type="submit" name="" value="login" autocomplete="off" >
+       <button type="button" class="toggle-btn button-nav" id="btn3" routerLink="/register">Sign Up</button>
+      </form>
+    </div>
+
+  </div>
+</body>
+</html>
